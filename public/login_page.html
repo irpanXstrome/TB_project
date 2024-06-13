@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Tengah dengan Bootstrap</title>
+    <!-- Panggil Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .login-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 3%;
+            position: relative;
+            width: 384px;
+            height: 460px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 5%);
+            overflow: hidden;
+        }
+
+        .surface_form {
+            position: relative;
+            background-color: white;
+            top: -100%;
+            margin-left: -3%;
+            margin-right: -3%;
+            padding: 5% 3% 15%;
+            border-radius: 5%;
+        }
+
+        .form_top {
+            width: 120%;
+            height: 460px;
+            position: relative;
+            top: -22%;
+            left: -8%;
+        }
+
+
+        .input-group{
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .input-group-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .form-control {
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="login-form">
+        <img src="form_top.svg" alt="SVG image" class="form_top">
+        <div class="position-relative" style="top: -100%">
+            <img src="form_icon-user.svg" alt="SVG image" class="position-relative top-0 start-50 translate-middle">
+            <h2 class="start-50 text-center mb-4" style="margin-top: -6%;">Login</h2>
+        </div>
+        <div class="surface_form">
+
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <span class="input-group-icon">
+                            <img src="form_icon-user.svg" alt="SVG image" class="">
+                    </span>
+                    <input type="password" id="password" class="form-control" placeholder="Enter password">
+                </div>
+                <div class="form-group d-grid gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Panggil Bootstrap JS dan library jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
